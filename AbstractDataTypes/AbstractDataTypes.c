@@ -68,6 +68,8 @@ int main() {
 	pushArrayStack(&s, secondValue);
 	pushArrayStack(&s, thirdValue);
 
+	printf("Stack is one of abstract data types, \nwhich is well known as FILO(First Input Last Output)\n");
+	printf("\nStack Arrays:\n");
 	printf("%d\n", popArrayStack(&s));
 	printf("%d\n", popArrayStack(&s));
 	printf("%d\n", popArrayStack(&s));
@@ -77,6 +79,8 @@ int main() {
 	enqueueArray(&q, secondValue);
 	enqueueArray(&q, thirdValue);
 
+	printf("\nQueue is one of abstract data types, \nwhich is well known as FIFO(First Input First Output)\n");
+	printf("\nQueue Arrays:\n");
 	printf("%d\n", dequeueArray(&q));
 	printf("%d\n", dequeueArray(&q));
 	printf("%d\n", dequeueArray(&q));
