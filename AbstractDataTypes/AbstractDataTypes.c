@@ -1,6 +1,15 @@
 #include <stdio.h>
 
 
+
+typedef struct {
+	int element[100];
+}LinkedList;
+
+typedef struct {
+	int element[100];
+}LinkedPoint;
+
 typedef struct {
 	int elements[100];
 	int frontIndex;
@@ -33,6 +42,7 @@ typedef struct {
 	int elements[100];
 }Stack;
 
+
 void initArrayStack(Stack* s) {
 	s->top = -1;
 
@@ -55,6 +65,16 @@ int popArrayStack(Stack* s) {
 	return result;
 }
 
+int peekArrayStack(Stack* s) {
+	int result = s->elements[s->top];
+
+	return result;
+}
+
+int peekQueueArray(Queue* q) {
+	int result = q->elements[q->frontIndex];
+	return result;
+}
 
 int main() {
 	Stack s;
@@ -69,10 +89,15 @@ int main() {
 	pushArrayStack(&s, thirdValue);
 
 	printf("Stack is one of abstract data types, \nwhich is well known as FILO(First Input Last Output)\n");
+	printf("\nThis is the peek of the Stack Array: ");
+	printf("%d\n", peekArrayStack(&s));
+
 	printf("\nStack Arrays:\n");
 	printf("%d\n", popArrayStack(&s));
 	printf("%d\n", popArrayStack(&s));
 	printf("%d\n", popArrayStack(&s));
+
+
 
 	initArrayQueue(&q);
 	enqueueArray(&q, firstValue);
@@ -80,10 +105,14 @@ int main() {
 	enqueueArray(&q, thirdValue);
 
 	printf("\nQueue is one of abstract data types, \nwhich is well known as FIFO(First Input First Output)\n");
+	printf("\nThis is the peek of the Queue Array: ");
+	printf("%d\n", peekQueueArray(&q));
+
 	printf("\nQueue Arrays:\n");
 	printf("%d\n", dequeueArray(&q));
 	printf("%d\n", dequeueArray(&q));
 	printf("%d\n", dequeueArray(&q));
+
 
 
 	return 0;
