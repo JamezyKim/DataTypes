@@ -2,6 +2,33 @@
 
 
 typedef struct {
+	int elements[100];
+	int frontIndex;
+	int endIndex;
+}Queue;
+
+void initArrayQueue(Queue* q) {
+
+	q->frontIndex = 0;
+	q->endIndex = -1;
+
+	return;
+}
+
+void enqueueArray(Queue* q, int value) {
+	q->endIndex = q->endIndex + 1;
+	q->elements[q->endIndex] = value;
+	return;
+}
+
+int dequeueArray(Queue* q) {
+	int result = q->elements[q->frontIndex];
+	q->frontIndex = q->frontIndex + 1;
+
+	return result;
+}
+
+typedef struct {
 	int top;
 	int elements[100];
 }Stack;
@@ -31,6 +58,7 @@ int popArrayStack(Stack* s) {
 
 int main() {
 	Stack s;
+	Queue q;
 
 	int firstValue = 1;
 	int secondValue = 2;
@@ -43,6 +71,15 @@ int main() {
 	printf("%d\n", popArrayStack(&s));
 	printf("%d\n", popArrayStack(&s));
 	printf("%d\n", popArrayStack(&s));
+
+	initArrayQueue(&q);
+	enqueueArray(&q, firstValue);
+	enqueueArray(&q, secondValue);
+	enqueueArray(&q, thirdValue);
+
+	printf("%d\n", dequeueArray(&q));
+	printf("%d\n", dequeueArray(&q));
+	printf("%d\n", dequeueArray(&q));
 
 
 	return 0;
