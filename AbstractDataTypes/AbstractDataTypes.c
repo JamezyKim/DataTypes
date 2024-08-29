@@ -186,6 +186,19 @@ void LL_add_to_head(LL_t* list, int value) {
 	return;
 }
 
+void LL_add_to_tail(LL_t* list, int value) {
+	node_t* newNode = (node_t*)malloc(sizeof(node_t));
+	newNode->data = value;
+	if (list->tail == NULL) {
+		newNode->next = NULL;
+		list->tail = newNode;
+		return;
+	}
+	list->tail->next = newNode;
+	list->tail = newNode;
+	return;
+}
+
 int main() {
 	//Stack s;
 	//Queue q;
