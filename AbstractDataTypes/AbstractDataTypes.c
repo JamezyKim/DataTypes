@@ -208,6 +208,16 @@ void LL_remove_from_head(LL_t* list) {
 	return;
 }
 
+int LL_size(const LL_t* list) {
+	node_t* temp = list->head;
+	int counter = 0;
+	while (temp != NULL) {
+		temp = temp->next;
+		counter++;
+	}
+	return counter;
+}
+
 int main() {
 	//Stack s;
 	//Queue q;
