@@ -236,12 +236,28 @@ void LL_print(const LL_t* list) {
 	return;
 }
 
+void LLnode_free(node_t* node) {
+	if (node != NULL) {
+		free(node);
+		return;
+	}
+}
+
+void LL_free(LL_t* list) {
+	if (list != NULL) {
+		free(list);
+		return;
+	}
+}
+
 int main() {
 	//Stack s;
 	//Queue q;
 	NodeStack s;
 	NodeQueue q;
 	LL_t list;
+	node_t  node;
+
 	LL_init(&list);
 
 	LL_add_to_head(&list, 3);
