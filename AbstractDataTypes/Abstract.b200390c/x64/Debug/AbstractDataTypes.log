@@ -1,2 +1,8 @@
 ﻿  AbstractDataTypes.c
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(34,20): warning C4133: '=': incompatible types - from 'Node *' to 'Node *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(41,16): warning C4133: '=': incompatible types - from 'Node *' to 'Node *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(61,16): warning C4133: '=': incompatible types - from 'Node *' to 'Node *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(69,9): warning C4133: '=': incompatible types - from 'Node *' to 'Node *'
+  LinkedListExamples.c
+  Generating Code...
   AbstractDataTypes.vcxproj -> C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\x64\Debug\AbstractDataTypes.exe
