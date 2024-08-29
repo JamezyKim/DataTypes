@@ -199,6 +199,15 @@ void LL_add_to_tail(LL_t* list, int value) {
 	return;
 }
 
+void LL_remove_from_head(LL_t* list) {
+	if (list->head = NULL) {
+		return;
+	}
+	node_t* temp = list->head;
+	list->head = temp->next;
+	return;
+}
+
 int main() {
 	//Stack s;
 	//Queue q;
