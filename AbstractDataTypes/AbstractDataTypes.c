@@ -162,8 +162,8 @@ typedef struct {
 }node_t;
 
 typedef struct {
-	LL_t* head;
-	LL_t* tail;
+	node_t* head;
+	node_t* tail;
 }LL_t;
 
 void LL_init(LL_t* list) {
@@ -196,11 +196,12 @@ void LL_add_to_tail(LL_t* list, int value) {
 	}
 	list->tail->next = newNode;
 	list->tail = newNode;
+
 	return;
 }
 
 void LL_remove_from_head(LL_t* list) {
-	if (list->head = NULL) {
+	if (list->head == NULL) {
 		return;
 	}
 	node_t* temp = list->head;
@@ -209,13 +210,30 @@ void LL_remove_from_head(LL_t* list) {
 }
 
 int LL_size(const LL_t* list) {
-	node_t* temp = list->head;
 	int counter = 0;
+	node_t* temp = list->head;
 	while (temp != NULL) {
 		temp = temp->next;
 		counter++;
 	}
+
 	return counter;
+}
+
+void LL_print(const LL_t* list) {
+	node_t* temp = list->head;
+	if (temp == NULL) {
+		return;
+	}
+
+	printf("%d", temp->data);
+	temp = temp->next;
+
+	while (temp != NULL) {
+		printf("->%d", temp->data);
+		temp = temp->next;
+	}
+	return;
 }
 
 int main() {
@@ -224,13 +242,12 @@ int main() {
 	NodeStack s;
 	NodeQueue q;
 	LL_t list;
-
 	LL_init(&list);
 
 	LL_add_to_head(&list, 3);
 	LL_add_to_head(&list, 7);
-
-	printf("%d",LL_size(&list));
+	LL_print(&list);
+	//printf("%d",LL_size(&list));
 
 	/*int firstValue = 1;
 	int secondValue = 2;
