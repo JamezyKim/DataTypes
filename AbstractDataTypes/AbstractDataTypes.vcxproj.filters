@@ -18,5 +18,8 @@
     <ClCompile Include="AbstractDataTypes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ArrayStackQueue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

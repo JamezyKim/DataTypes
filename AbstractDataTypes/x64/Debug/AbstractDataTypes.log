@@ -1,15 +1,17 @@
 ﻿  AbstractDataTypes.c
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(34,15): warning C4133: '=': incompatible types - from 'Node *' to 'Node *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(41,11): warning C4133: '=': incompatible types - from 'Node *' to 'Node *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(61,16): warning C4133: '=': incompatible types - from 'Node *' to 'Node *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(69,9): warning C4133: '=': incompatible types - from 'Node *' to 'Node *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(183,16): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(197,19): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(208,13): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(216,8): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(230,7): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(234,8): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(259,10): warning C4101: 'node': unreferenced local variable
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(257,12): warning C4101: 'q': unreferenced local variable
-C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(256,12): warning C4101: 's': unreferenced local variable
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(41,16): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(58,19): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(69,13): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(77,8): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(92,7): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(96,8): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(134,28): warning C4133: '!=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(135,16): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(166,17): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(167,18): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(191,16): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(227,8): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(268,7): warning C4101: 'secondList': unreferenced local variable
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(267,7): warning C4101: 'firstList': unreferenced local variable
+C:\Users\PC\source\repos\AbstractDataTypes\AbstractDataTypes\AbstractDataTypes.c(269,10): warning C4101: 'node': unreferenced local variable
   AbstractDataTypes.vcxproj -> C:\Users\PC\source\repos\AbstractDataTypes\x64\Debug\AbstractDataTypes.exe
